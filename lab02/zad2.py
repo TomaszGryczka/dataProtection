@@ -3,7 +3,7 @@ from Cryptodome.Cipher import ARC4
 
 ARC4.key_size = range(3, 257)
 
-encrypted_file = open("crypto2.rc4", "rb")
+encrypted_file = open("crypto.rc4", "rb")
 encrypted_text = encrypted_file.read()
 
 def shannon_entropy(string):

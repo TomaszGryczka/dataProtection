@@ -7,7 +7,6 @@ table = str.maketrans("abcdefghijklmnopqrstuvwxyz", "nopqrstuvwxyzabcdefghijklm"
 error = 0.05
 
 def predict_offset(text, most_freq_letter, most_freq_letter_prob):
-    lowercase_text = text.lower()
     letters_freq = count_letters(text).most_common()
     sum_of_letters = 0
     for i in range(len(letters_freq)):
