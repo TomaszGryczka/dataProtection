@@ -1,0 +1,45 @@
+Aby uruchomić zapisany przeze mnie docker image należy wykonać:
+sudo docker run -p 80:8080 -ti nginx_ubuntu /bin/bash
+
+Po uruchomieniu należy wykonać polecenie, aby odpalić php-fpm:
+service php8.1-fpm start
+service nginx start
+
+Zadanie 1:
+Katalog z włączonym indeksowaniem:
+/autoindex
+
+Katalog z ochroną dostępu przez hasło:
+/protected
+Login i hasło do katalogu "/protected":
+login: zetis
+hasło: zetis
+
+Zabroniony dostęp do pliku dla wszystich adresów IP:
+/autoindex/blocked-access.txt
+
+zadanie 2:
+/php_code/file.php
+Posiada prawidłowe uprawnienia - bez nadania plikowi uprawnień jako user no_root_user nie jesteśmy w stanie odczytać pliku
+
+Zadanie 3:
+Uruchomienie uswgi:
+cd ./flask
+uwsgi --socket 127.0.0.1:29000 -w app:app
+
+Możemy teraz odpalić /flask i zobaczyć, że jako root wyprintujemy plik only_for_root.sh,
+dlatego stworzyłem grupę i użytkownika:
+
+Dodałem grupę:
+addgroup no_root_group
+
+Stworzylem użytkownika:
+adduser no_root_user
+
+I przypisałem go do grupy:
+usermod -a -G no_root_group no_root_user
+
+I teraz mogę wywołać wypisanie zawartości jako root i jako no_root_user:
+uwsgi --socket 127.0.0.1:29000 -w app:app
+
+uwsgi --socket 127.0.0.1:29000 -w app:app --uid 1000
