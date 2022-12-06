@@ -24,10 +24,9 @@ def user_loader(username):
 
     db = sqlite3.connect(DATABASE)
     sql = db.cursor()
-    query = f"SELECT username, password FROM user WHERE username = ?"
-    sql.execute(query, (username, ))
-    # query = f"SELECT username, password FROM user WHERE username = '{username}'"
-    # sql.execute(query)
+    # query = f"SELECT username, password FROM user WHERE username = ?"
+    # sql.execute(query, (username, ))
+    sql.execute(f"SELECT username, password FROM user WHERE username = '{username}'")
     row = sql.fetchone()
     try:
         username, password = row
@@ -80,10 +79,9 @@ def hello():
 
         db = sqlite3.connect(DATABASE)
         sql = db.cursor()
-        query = f"SELECT id FROM notes WHERE username == ?"
-        sql.execute(query, (username, ))
-        # sql.execute(f"SELECT id FROM notes WHERE username == '{username}'")
-        # sql.execute(query)
+        # query = f"SELECT id FROM notes WHERE username == ?"
+        # sql.execute(query, (username, ))
+        sql.execute(f"SELECT id FROM notes WHERE username == '{username}'")
         notes = sql.fetchall()
 
         return render_template("hello.html", username=username, notes=notes)
@@ -96,9 +94,9 @@ def render():
     username = current_user.id
     db = sqlite3.connect(DATABASE)
     sql = db.cursor()
-    query = f"INSERT INTO notes (username, note) VALUES (?, ?)"
-    sql.execute(query, (username, rendered))
-    # sql.execute(f"INSERT INTO notes (username, note) VALUES ('{username}', '{rendered}')")
+    # query = f"INSERT INTO notes (username, note) VALUES (?, ?)"
+    # sql.execute(query, (username, rendered))
+    sql.execute(f"INSERT INTO notes (username, note) VALUES ('{username}', '{rendered}')")
     
     db.commit()
     return render_template("markdown.html", rendered=rendered)
@@ -128,6 +126,7 @@ if __name__ == "__main__":
     sql.execute("INSERT INTO user (username, password) VALUES ('bach', '$5$rounds=535000$ZJ4umOqZwQkWULPh$LwyaABcGgVyOvJwualNZ5/qM4XcxxPpkm9TKh4Zm4w4');")
     sql.execute("INSERT INTO user (username, password) VALUES ('john', '$5$rounds=535000$AO6WA6YC49CefLFE$dsxygCJDnLn5QNH/V8OBr1/aEjj22ls5zel8gUh4fw9');")
     sql.execute("INSERT INTO user (username, password) VALUES ('bob', '$5$rounds=535000$.ROSR8G85oGIbzaj$u653w8l1TjlIj4nQkkt3sMYRF7NAhUJ/ZMTdSPyH737');")
+    sql.execute("INSERT INTO user (username, password) VALUES ('bobo', '$5$rounds=535000$.ROSR8G85oGIbzaj$u653w8l1TjlIj4nQkkt3sMYRF7NAhUJ/ZMTdSPyH737');")
 
     sql.execute("DROP TABLE IF EXISTS notes;")
     sql.execute("CREATE TABLE notes (id INTEGER PRIMARY KEY, username VARCHAR(32), note VARCHAR(256));")
