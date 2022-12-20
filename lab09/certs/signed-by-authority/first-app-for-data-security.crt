@@ -1,0 +1,72 @@
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=PL, ST=Mazowieckie, L=Warszawa, O=Politechnika Warszawska, OU=Ochrona Danych, CN=ODAS/emailAddress=01159252@pw.edu.pl
+        Validity
+            Not Before: Dec 17 20:03:53 2022 GMT
+            Not After : Dec 17 20:03:53 2023 GMT
+        Subject: C=PL, ST=Mazowieckie, L=Warszawa, O=Frist App, OU=Data Security, CN=First/emailAddress=01159252@pw.edu.pl
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:c0:ac:7c:6f:38:cf:12:b1:76:88:2f:86:b1:f9:
+                    f7:5f:90:7c:a9:66:89:27:8d:6e:d1:2c:ae:8b:e8:
+                    35:59:e2:10:36:9a:0f:3d:d6:14:c7:f2:c2:49:c7:
+                    16:cf:c8:8f:34:1f:a6:ed:3b:c4:49:5d:ad:9d:71:
+                    1d:db:6a:1f:f5:d6:0f:10:07:4c:0c:18:c7:49:95:
+                    9b:43:3e:af:a0:19:d4:b0:c4:28:3d:53:16:9c:d6:
+                    7b:ec:90:f4:b4:c6:bc:46:04:ce:b9:b9:b4:3e:9a:
+                    99:48:0d:a4:90:c4:72:bf:5b:d5:10:a0:76:9e:6f:
+                    97:07:cc:90:7e:f3:bf:24:ff:9b:14:65:bb:12:13:
+                    b6:1d:bd:dd:19:93:7b:4f:9d:90:8e:d8:c5:16:bd:
+                    72:86:42:14:e9:40:a3:c7:4e:5e:21:ed:63:23:f4:
+                    ee:06:cc:8c:af:6e:ce:af:37:48:19:67:77:17:06:
+                    ac:2f:9b:b1:8e:81:25:35:b4:a0:eb:94:b6:21:4a:
+                    b4:d0:8f:19:c5:91:10:1e:ac:70:b6:82:01:f3:83:
+                    5b:8b:d3:bd:98:8f:84:56:20:1d:2c:f3:ca:ec:f7:
+                    bc:45:7f:45:48:82:2a:c8:a5:33:e3:bd:06:ab:69:
+                    f7:b0:1a:8c:12:2f:5c:45:2c:47:40:14:69:51:b1:
+                    fd:39
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        1c:3f:21:3b:1b:8e:c5:1a:11:8f:29:48:61:17:01:b4:95:23:
+        b0:36:69:15:61:da:21:58:4e:4c:99:d1:e9:d3:01:84:73:e8:
+        e6:44:dc:a8:d2:5b:89:1f:d0:2b:e8:63:d2:63:5f:d4:b7:26:
+        e9:1a:6e:dd:6e:b4:2a:2c:ce:ef:9e:54:42:70:e0:94:ef:a4:
+        7e:16:2c:74:66:2c:e1:0a:fc:59:e3:94:86:6a:55:d1:15:c9:
+        ae:dc:ee:77:c2:e1:54:4d:39:b8:ec:b3:ed:79:64:62:20:d4:
+        ba:cb:ad:96:b0:20:11:60:21:0d:e0:9b:71:0e:ec:93:00:28:
+        8e:3b:5b:1e:24:1a:80:d0:ba:29:80:5a:52:87:55:02:93:99:
+        50:d2:95:d5:8b:f4:25:59:50:ef:7f:bd:94:97:eb:d0:90:b3:
+        af:00:1e:11:d4:6c:2e:da:7e:ff:4d:c1:1f:52:fb:b8:47:8d:
+        eb:6e:f3:60:2e:a3:b5:3f:20:e0:94:05:7a:53:ed:48:59:1a:
+        76:76:f1:25:6e:6b:17:27:93:73:1f:e4:5d:53:2c:a5:e4:f1:
+        de:be:b3:c3:89:f1:d6:0b:35:bf:58:f3:73:8f:8e:90:39:fa:
+        8c:ee:b2:c8:a2:e3:8c:1c:0c:37:2e:09:65:6e:09:98:e7:91:
+        b2:7e:c0:84
+-----BEGIN CERTIFICATE-----
+MIIDrjCCApYCAQEwDQYJKoZIhvcNAQELBQAwgaMxCzAJBgNVBAYTAlBMMRQwEgYD
+VQQIDAtNYXpvd2llY2tpZTERMA8GA1UEBwwIV2Fyc3phd2ExIDAeBgNVBAoMF1Bv
+bGl0ZWNobmlrYSBXYXJzemF3c2thMRcwFQYDVQQLDA5PY2hyb25hIERhbnljaDEN
+MAsGA1UEAwwET0RBUzEhMB8GCSqGSIb3DQEJARYSMDExNTkyNTJAcHcuZWR1LnBs
+MB4XDTIyMTIxNzIwMDM1M1oXDTIzMTIxNzIwMDM1M1owgZUxCzAJBgNVBAYTAlBM
+MRQwEgYDVQQIDAtNYXpvd2llY2tpZTERMA8GA1UEBwwIV2Fyc3phd2ExEjAQBgNV
+BAoMCUZyaXN0IEFwcDEWMBQGA1UECwwNRGF0YSBTZWN1cml0eTEOMAwGA1UEAwwF
+Rmlyc3QxITAfBgkqhkiG9w0BCQEWEjAxMTU5MjUyQHB3LmVkdS5wbDCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMCsfG84zxKxdogvhrH591+QfKlmiSeN
+btEsrovoNVniEDaaDz3WFMfywknHFs/IjzQfpu07xEldrZ1xHdtqH/XWDxAHTAwY
+x0mVm0M+r6AZ1LDEKD1TFpzWe+yQ9LTGvEYEzrm5tD6amUgNpJDEcr9b1RCgdp5v
+lwfMkH7zvyT/mxRluxITth293RmTe0+dkI7YxRa9coZCFOlAo8dOXiHtYyP07gbM
+jK9uzq83SBlndxcGrC+bsY6BJTW0oOuUtiFKtNCPGcWREB6scLaCAfODW4vTvZiP
+hFYgHSzzyuz3vEV/RUiCKsilM+O9Bqtp97AajBIvXEUsR0AUaVGx/TkCAwEAATAN
+BgkqhkiG9w0BAQsFAAOCAQEAHD8hOxuOxRoRjylIYRcBtJUjsDZpFWHaIVhOTJnR
+6dMBhHPo5kTcqNJbiR/QK+hj0mNf1Lcm6Rpu3W60KizO755UQnDglO+kfhYsdGYs
+4Qr8WeOUhmpV0RXJrtzud8LhVE05uOyz7XlkYiDUusutlrAgEWAhDeCbcQ7skwAo
+jjtbHiQagNC6KYBaUodVApOZUNKV1Yv0JVlQ73+9lJfr0JCzrwAeEdRsLtp+/03B
+H1L7uEeN627zYC6jtT8g4JQFelPtSFkadnbxJW5rFyeTcx/kXVMspeTx3r6zw4nx
+1gs1v1jzc4+OkDn6jO6yyKLjjBwMNy4JZW4JmOeRsn7AhA==
+-----END CERTIFICATE-----
