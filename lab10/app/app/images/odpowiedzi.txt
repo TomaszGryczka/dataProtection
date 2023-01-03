@@ -1,0 +1,23 @@
+Zad 1.
+username:
+default
+
+pic url: 
+https://100procent-natury.pl/userdata/public/gfx/852/mandary.jpg
+
+Zad 2.
+username:
+../sqlite3
+
+pic url:
+https://100procent-natury.pl/pl/p/MANDARYNKI/476.db
+
+Zad 3.
+bob
+
+http://internal.company.com:8080/index.html%00.txt
+
+Zad 4.
+bob
+
+http://internal.company.com:8080/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00.txt
